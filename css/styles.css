@@ -1,0 +1,449 @@
+/* 
+Author: Saw Paw Wai Mu 
+Date: 26/4/2023
+File Name: styles.css 
+*/
+body, header, nav, main, footer, h1, div, img, ul { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+   }
+
+body{
+    background-color: #ffffff;
+}
+
+img { 
+    max-width: 100%;
+    display: block;      
+}
+
+
+/* Style rules for mobile viewport */
+header  { 
+    top: 0; 
+    background-color: #ffffff; 
+    height: 150px; 
+   } 
+    
+header img { 
+   margin: 0 auto;
+   max-height: 95%; 
+   } 
+
+    /* Style rules for hamburger menu */ 
+   .mobile-nav a { 
+
+    color: #060606; 
+    font-family: 'Francois One', sans-serif; 
+    text-align: center; 
+    font-size: 2em; 
+    text-decoration: none; 
+    padding: 3%; 
+    display: block; 
+   } 
+
+   .mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; 
+
+   } 
+    
+
+
+    /* Show mobile class, hide tablet-desktop class and menu-links id  */ 
+    .mobile { 
+        display: block; 
+    } 
+    .tablet-desktop, #menu-links { 
+        display: none; 
+    } 
+    
+
+    .highlight {
+        background-color: #ffff0f;
+        border: none;
+        border-radius: 8px;
+    
+    
+    }
+
+    .services{
+        clear: both;
+        display: grid;
+        gap: 1em;
+    }
+
+    
+    
+    section img {
+        border-radius: 10px;
+    }
+  
+    main {
+    clear: left;
+    background-color: #080707;
+    padding: 2%; 
+    font-size: 1.15em;
+    color: #f9f9f5;
+    font-family: 'Roboto Slab', serif;
+
+    }
+     
+    main div h3 a {
+        color: #ffff0f;
+    }
+
+    main div p a {
+        color: #ffff0f;
+    }
+
+    .action { 
+        font-size: 1.35em; 
+        color: #666600; 
+        font-weight: bold; 
+        }
+
+    .color { 
+        font-size: 1.35em; 
+        color: #f5f594; 
+        font-weight: bold; 
+            }
+
+    .hours { 
+        margin-left: 10%; 
+           } 
+
+    
+    .tel-link {
+            background-color: #fbfbfb;
+            padding: 2%;
+            margin: 1 auto;
+            width: auto;
+            text-align: center;
+            border-radius: 8px;
+                   }
+
+    .tel-link a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 1.5em; 
+            display: block; 
+                }
+
+    .email {
+        font-size: 1em;
+    }
+    
+
+    .autocar {
+        position: relative;
+       text-align: center;
+       color: rgb(10, 10, 10)
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: auto auto auto;
+       
+    }
+
+    #package, #services, #certificate, #carservice, #truckservice, #fourwdservice, #suvservice, #otherservice  {
+        margin:  0 2%;
+    }
+
+    .round { 
+        border-radius: 8px; 
+       } 
+    
+.container {
+    position: static ;
+    text-align: center;
+    color: rgb(5, 4, 4);
+    font-size: 1.5em;
+
+  }
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 250px;
+    left: 120px;
+  }
+
+.blog {
+    position: static ;
+    text-align: center;
+    color: rgb(246, 241, 241);
+    font-size: 1em;
+}
+
+.regular-maintenance {
+    position: absolute;
+    bottom: 380px;
+    left: 50px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #eeff08;
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+
+#form { 
+    margin-top: 2%; 
+    background-color: #2b2c27; 
+    padding: 2%; 
+   } 
+    
+   #form h2 { 
+    text-align: center; 
+   } 
+    
+   /* Style rules for form elements */ 
+   fieldset, input, select, textarea { 
+    margin-bottom: 2%; 
+   } 
+    
+   fieldset legend { 
+    font-weight: bold; 
+    font-size: 1.25em; 
+    } 
+    
+   label { 
+    display: block; 
+    padding-top: 3%; 
+   } 
+    
+   form #submit { 
+    margin: 0 auto; 
+    border: none; 
+    display: block; 
+    padding: 2%; 
+    background-color: #b3b3b3; 
+    font-size: 1em; 
+    border-radius: 10px; 
+   
+   }
+
+
+    footer p { 
+        font-size: 0.75em;
+        text-align: center;
+        color: #060606;
+        padding: 0 1em;
+        } 
+    footer p a { 
+        color: #060606; 
+        text-decoration: none; 
+        } 
+
+        #contact {
+            text-align: center;
+            color: rgb(248, 243, 243);
+            text-decoration: none;
+        }
+
+        #booking {
+            text-align: center;
+            color: rgb(248, 243, 243);
+            text-decoration: none;
+        }
+
+/* Media Query for Tablet Viewport */ 
+@media screen and (min-width: 640px) { /*insert a media query*/ 
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */ 
+.tablet-desktop { 
+    display: block; 
+   } 
+    
+   .mobile , mobile-nav, .mobile-nav a.menu-icon { 
+    display: none; 
+   }
+
+   /* Tablet Viewport: Style rule for header */ 
+header { 
+    position: static; 
+    padding-bottom: 2%; 
+    }
+
+header img { 
+   
+    max-height: 95%;
+    } 
+
+
+
+    /* Tablet Viewport: Style rules for nav area */ 
+
+    nav {
+        padding: 1%;
+        margin-bottom: 1%; 
+    }
+
+    nav ul { 
+        list-style-type: none;  
+        text-align: center; 
+    }
+
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+   
+    
+    nav li:last-child { 
+    border-right: none; 
+    } 
+    
+    nav li a { 
+    padding: 0.1em 0.75em; 
+    display: block; 
+    color: #080808; 
+    text-decoration: none;
+    }
+ 
+} 
+
+main ul {
+    margin: 0 0 4% 10%;
+}
+
+.tel-link {
+    background-color: #ffffff;
+    padding: 1%;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+           }
+
+
+
+
+
+
+/* Tablet Viewport: Style rule for form element */ 
+form { 
+    width: 70%; 
+    margin: 0 auto; 
+    } 
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px) { 
+
+    /* Desktop Viewport: Style rule for header */ 
+ header { 
+    width: 25%; 
+    float: left; 
+    padding-bottom: 2;
+    
+    } 
+
+    /* Desktop Viewport: Style rules for nav area */ 
+ nav { 
+    float: right; 
+    width: 68%; 
+    margin: 0em 0em 0 0; 
+    } 
+
+    nav ul { 
+        text-align: right; 
+        } 
+        
+        nav li { 
+        border: none; 
+        } 
+        
+        nav li a { 
+        padding: 0.2em 1em; 
+       } 
+
+       .tel-link {
+        background-color: #ffffff;
+        padding: 1%;
+        margin: 0 auto;
+        width: 250px;
+        text-align: center;
+        border-radius: 8px;
+               }
+
+    /* Desktop Viewport: Style rules for form elements */ 
+  form { 
+    width: auto; 
+    } 
+    .form-grid { 
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    gap: 20px; 
+    } 
+     
+    .btn { 
+    grid-column: 1 / span 3; 
+    } 
+
+    main { 
+        clear: left; 
+       } 
+        
+    main h1 { 
+        font-size: 1.8em; 
+       } 
+
+    .bottom-left {
+        position: absolute;
+        bottom: 150px;
+        left: 10px;
+      }
+    
+    main div h1 {
+        position: sticky;
+        border-top-right-radius: 10px;
+        left: 5px;
+        padding: 0%;
+       
+    }
+
+    .book {
+        background-color: #ffff0f;
+            padding: 1%;
+            margin: 1 auto;
+            width: auto;
+            text-align: center;
+            border-radius: 8px;
+
+    }
+    
+
+    .services{
+        clear: both;
+        display: grid;
+        gap: 1em;
+    }
+       #services, #certificate, #carservice, #truckservice, #fourwdservice, #suvservice, #otherservice
+       { 
+       clear:both; 
+       } 
+
+
+ 
+     
+} 
